@@ -1,0 +1,46 @@
+
+
+.modal{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background:rgba(0, 0, 0, .5) ;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+    display:none;
+    z-index: 0;
+
+
+
+
+}
+
+.card{
+    background-color: white;
+    /* text-align: center; */
+    width: 50%;
+    margin: 14% auto;
+    padding:20px 10px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    z-index: 1;
+    /* margin: 25px 0 0 0 ; */
+
+    
+}
+
+
+
+
+
+
+.card .flex{
+    justify-content: center;
+    align-items: center;
+}

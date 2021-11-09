@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body >
+    <!-- Header -->
+    <header>
+        <h1>Rock - Paper - Scissor</h1>
+    </header>
+    <!-- Scoreboard -->
+    <div class="container tab">
+        <div class="scoreboard ">
+            <table>
+                <tr><td>Player</td><td>Tie</td><td>Computer</td></tr>
+                <tr><td id="pl">0</td><td id="ti">0</td><td id="cpu">0</td></tr>  
+            </table>
+        </div>
+        <button class='bt' id="restart" >Restart</button>
+<!-- Showcase -->
+    <div class="container flex mar">
+        <div>
+            <h3 class="show">Player</h3>
+            <div id="player-choice1" >
+                <div class="size"><img src="img/player.png" alt="rock" id="player-choice" class="player-choice"></div>
+        </div>
+        </div>
+        <div class="result">
+            <h3 class="res" id="res">Make Selection</h3>   
+            <br>
+            <h3 class="cmt" id="cmt">To Start Game</h3>
+        </div>
+        <div>
+            <h3 class="show-">CPU</h3>
+            <div id="cpu-choice1" >
+                <div class="size"><img src="img/cpu.png" alt="scissor" id="cpu-choice"></div>
+            </div>
+        </div>
+    </div>
+<!--Make Your Selection-->
+    <div class="container ch">
+        <div class="flex choices" id="choices" >
+            <div class="size- ro"> 
+                <img src="img/rock.png" alt="Rock" id="rock">
+            </div>
+            <div class="size- p">
+                <img src="img/paper.png" alt="Paper" id="paper">
+            </div>
+            <div class="size- s">
+                <img src="img/scissor.png" alt="Scissor" id="scissor">
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/main.js"></script>  
+</body>
+</html>
