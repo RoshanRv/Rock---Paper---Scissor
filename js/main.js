@@ -33,6 +33,7 @@ function play(e){
     res(win[0])
     score()
     rest(win[1],win[0])
+    console.log(document.doctype)
 }
 
 function reset(){
@@ -42,7 +43,9 @@ function reset(){
     score();
     result.innerHTML = 'Make Selection';
     cmt.innerHTML='To Start Game'
-    if (screen.width > 520){result.style.fontSize = '34px';}
+    if (screen.width > 520)
+        {result.style.fontSize = '34px';}
+    else{result.style.fontSize = '18px'}
     pl_choice.src = 'img/player.png';
     pl.style.border = ' solid #AFE313';
     pl.style.boxShadow = 'inset 0 0 20px #AFE313, inset 0 0 30px #AFE313,0px 0px 40px #AFE313,0px 0px 50px #AFE313';
@@ -108,7 +111,9 @@ function chngcpu(c){
 }
 
 function res(w){
-    if(screen.width > 520){result.style.fontSize = '48px';}
+    if(screen.width > 520)
+        {result.style.fontSize = '48px';}
+    else{result.style.fontSize='18px'}
     if(w==='win'){
         result.innerHTML = 'You Won'
         result.style.color = '#66FF66'
